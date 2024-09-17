@@ -1,0 +1,43 @@
+.btns-con {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    border: 3px solid teal;
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    gap: 10px;
+
+    &:hover {
+        background-color: #6e006e;
+    }
+
+    img {
+        max-width: 70px;
+        min-width: 50px;
+    }
+
+    &:not(:first-of-type) {
+        flex-direction: column;
+        align-items: center;
+
+        >div {
+            img {
+                margin-top: 10px;
+            }
+        }
+    }
+}
